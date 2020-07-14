@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, select {
+    border: 1px solid #ddd;
+}
+
+div.wrap {
+    width: 100%;
+    max-width: 907px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    max-width: 841px;
+    min-width: 800px;
+    margin-top: 23px;
+    position: relative;
+}
+
+.header > form > span:first-child {
+    font-size: 10px;
+    color: #4da5a3;
+}
+
+.header > form > span:nth-child(2) {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.header > form > span:nth-child(4) {
+    font-size: 14px;
+}
+
+.header > form > span:nth-child(6) {
+    font-size: 14px;
+}
+
+.header > form > input:nth-child(3) {
+    width: 120px;
+    height: 33px;
+}
+
+.header > form > input:nth-child(5) {
+    width: 120px;
+    height: 33px;
+}
+
+.header > form > div.btn {
+    display: inline-block;
+    float: right;
+}
+
+.header > form > div.btn > button {
+    width: 68px;
+    height: 30px;
+    background-color: #3d7b0e;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.header > form > div.btn > button:not(:last-child) {
+    margin-right: 4px;
+}
+
+.header > form > div.serachBar {
+    width: 100%;
+    /* 검색창도 크기 %로 지정*/
+    max-width: 841px;
+    min-width: 800px;
+    height: 98px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #097788;
+    padding: 24px;
+    margin-top: 20px;
+}
+
+.header > form > div.serachBar > select {
+    width: 150px;
+    height: 45px;
+    padding: 10px;
+    vertical-align: top;
+    -webkit-appearance: none;
+    background-image:url("../images/downArrow_01.png");
+    background-repeat: no-repeat;
+    background-position: 130px center;
+}
+
+.header > form > div.serachBar > select::-ms-expand {
+    display: none;
+ }
+
+.header > form > div.serachBar > input:nth-child(2) {
+    width: 65%;
+    max-width: 550px;
+    height: 45px;
+    vertical-align: top;
+}
+
+.header > form > div.serachBar > input:nth-child(2)::placeholder {
+    text-align: center;
+    color: #2d6479;
+    font-weight: bold;
+    font-weight: 14;
+}
+
+.header > form > div.serachBar > input:nth-child(3) {
+    width: 81px;
+    height: 45px;
+    border: none;
+    background-color: #097788;
+    color: #fff;
+    vertical-align: top;
+}
+
+.main {
+    width: 100%;
+    max-width: 841px;
+}
+
+.main > div.notice {
+    width: 100%;
+    max-width: 841px;
+    min-width: 800px;
+    height: 133px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #097788;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.main > div.notice > h3 {
+    margin-top: 30px;
+    margin-left: 25px;
+    color: #606368;
+}
+
+.main > div.notice > p {
+    margin-top: 12px;
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.main > p {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main > p  > span {
+    font-weight: bold;
+}
+
+.main > div.board > table {
+    width: 100%;
+    max-width: 841px;
+    min-width: 800px;
+    border-collapse: collapse;
+    border-top: 2px solid #3c7a15;
+}
+
+.main > div.board > table > tbody > tr > th,
+.main > div.board > table > tbody > tr > td {
+    height: 42px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 15px;
+}
+
+.main > div.board > table > tbody > tr > th:first-child {
+    width: 65px;
+}
+
+.main > div.board > table > tbody > tr > td,
+.main > div.board > table > tbody > tr > td > a {
+    color: #666;
+}
+
+.main > div.board > div.pageNum {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main > div.board > div.pageNum > a {
+    display: inline-block;
+    color: #666;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.main > div.board > div.pageNum > a:first-child {
+    border: 1px solid #ddd;
+}
+
+.main > div.board > div.pageNum > a:nth-child(12){
+    border: 1px solid #ddd;
+}
+
+.main > div.board > div.pageNum > a:last-child {
+    border: 1px solid #ddd;
+}
+
+/* :hover, :focus, :active 순서 지키기 */
+.main > div.board > div.pageNum > a:hover:nth-child(n+2):nth-child(-n+11) {
+    text-decoration: underline;
+}
+
+.main > div.board > div.pageNum > a:focus:nth-child(n+2):nth-child(-n+11) {
+    background-color: #3d7b0e;
+    color: #fff;
+}
+
+.main > div.board > div.pageNum > a:active:nth-child(n+2):nth-child(-n+11) {
+    background-color: #fff;
+    color: #666;
+}
+
+.main > div.board > a > button {
+    border: none;
+    background-color: #3d7b0e;
+    float: right;
+    color: #fff;
+    width: 145px;
+    height: 40px;
+}
